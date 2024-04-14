@@ -17,9 +17,9 @@ body{
 }
 
 .container-header{
-    display: flex;
+    display:flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     background: url(../images/349fb611022ec7f6176d26321fce0011.gif);
     background-repeat: no-repeat;
     background-size: cover;
@@ -82,7 +82,7 @@ body{
     margin: 0px 50px;
     background-color: rgba(36, 19, 41, 0.359);
     padding: 30px;
-    border-radius: 40px;
+    border-radius: 20px 20px 70px 20px;
     transition: 0.5s;
 
 }
@@ -113,7 +113,7 @@ figure{
     text-align: center;
 }
 
-img{
+figure img{
     width: 20%;
     height: 30%x;
     border-radius: 5px 50px 90px 120px;
@@ -127,7 +127,7 @@ img{
 
 }
 
-img:hover{
+figure img:hover{
     transform: scale(110%);
     filter: saturate(100%) drop-shadow(25px 25px 5px  rgba(36, 19, 41, 0.845));
     /* filter: blur(0px); */
