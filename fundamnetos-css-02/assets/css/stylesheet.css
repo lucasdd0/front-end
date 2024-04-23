@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url(../fonts/Jacquard_24\,Montserrat\,Roboto/);
+}
+
+:root{
+    --font-weight: 500;
+    --text-decoration: underline;
+    --color: rgba(36, 19, 41);
+}
+
+body{
+    background-color: rgba(36, 19, 41, 0.934)
+}
+
+.container{
+    color: aliceblue;
+    font-family: "Montserrat", sans-serif;
+    margin: 0px 20px 20px 20px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+
+.container-header{
+    display:flex;
+    align-items: top;
+    justify-content: space-between;
+    background: url(../images/349fb611022ec7f6176d26321fce0011.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: scroll;
+    padding: 50px;
+    border-radius: 30px 30px 60px 60px;
+    transition: 0.5s;
+}
+
+.container-header:hover{
+    padding: 60px;
+}
+
+.container-header h1{
+    font-size: 40px;
+    font-weight: var(--font-weight);
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    word-spacing: 20px;
+    line-height: 50px;
+}
+
+.container-header ul{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    gap: 0px 5px;
+}
+
+.container-header a{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0px 10px;
+    transition: 0.5s;
+    border: 0px;
+    border-left: 3px solid;
+}
+
+.container-header a:hover{
+    padding: 10px 10px;
+    font-size: 19px;
+}
+
+.container-middle h2{
+    font-size: 25px;
+    font-weight: var(--font-weight);
+    text-transform: uppercase;
+}
+
+.container-middle p{
+    text-align: justify;
+    font-style: italic;
+    line-height: 25px;
+    margin: 20px 40px 20px 15px;
+}
+
+.container-list{
+    display: flex;
+    margin: 0px 50px;
+    background-color: rgba(36, 19, 41, 0.359);
+    padding: 30px;
+    border-radius: 20px 20px 70px 20px;
+    transition: 0.5s;
+
+}
+
+.container-list:hover{
+    transform: scale(105%);
+    background-color: var(--color);
+}
+
+figure{
+    text-align: center;
+}
+
+figure img{
+    width: 20%;
+    height: 30%x;
+    border-radius: 5px 50px 90px 120px;
+    transition: 1s;
+    margin: 2% 5%;
+    filter: saturate(0%);
+}
+
+figure img:hover{
+    transform: scale(110%);
+    filter: saturate(100%) drop-shadow(25px 25px 5px  rgba(36, 19, 41, 0.845));
+}
