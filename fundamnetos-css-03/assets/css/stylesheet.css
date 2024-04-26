@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 @font-face {
-    font-family: "Montserrat", sans-serif;;
-    src: url(../fonts/Jacquard_24\,Montserrat\,Roboto/);
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
 }
 
 *{
@@ -15,24 +13,34 @@
 
 body{
     margin: 40px;
-    font-family: "Montserrat", sans-serif;
+    font-family: Montserrat;
 }
 
 .seletor-adjacente h1 + p{           /* PRIMERO p em seguida do h1 */
-    background-color: red;
+    background-color: blueviolet;
 }
 .seletor-adjacente ul + p + p{
-    background-color: red;
+    background-color:blueviolet;
 }
 
 
 
 .seletor-irmao h1 ~ p{              /* TODOS os p's em seguida do primero h1 */
-    background-color: red;
+    background-color:brown;
 }
 
 .seletor-irmao li ~ li ~ li{
     list-style:lower-alpha;
+    border: 1px solid white;
+    margin: 0px 1300px 0px 0px;
 }
 
 
+
+.seletor-de-filhos-diretos > p{
+    background-color: blue;
+}
+
+.seletor-de-filhos-diretos > li{
+    background-color: blue;
+}
