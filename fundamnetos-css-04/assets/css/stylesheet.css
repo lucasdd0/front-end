@@ -1,0 +1,107 @@
+@font-face {
+    font-family: font;
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 60px;
+    background-color: gray;
+    color: white;
+    font-family: font;
+}
+
+
+.box1 .box {                                          /* .box:nth-child | .box:nth-child(even) | .box:nth-child(odd) */
+    width: 150px;                                     /* .box:first-child | .box:last-child */
+    height: 50px;                                     
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.box1 .box:nth-child(3) {
+    background-color: blueviolet;
+}
+
+
+
+.box2{
+    margin: 50px 0px;
+}
+
+.box2 .box {
+    width: 150px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.box2 .box:nth-child(even) {
+    background-color: brown;
+}
+
+
+
+.box3{
+    margin: 50px 0px;
+}
+
+.box3 .box {
+    width: 150px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.box3 .box:nth-child(odd) {
+    background-color: red;
+}
+
+
+
+.box4{
+    margin: 50px 0px;
+}
+
+.box4 .box {
+    width: 150px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.box4 .box:first-child {
+    background-color:cadetblue;
+}
+
+
+
+.box5{
+    margin: 50px 0px;
+}
+
+.box5 .box {
+    width: 150px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.box5 .box:last-child {
+    background-color:cadetblue;
+}
