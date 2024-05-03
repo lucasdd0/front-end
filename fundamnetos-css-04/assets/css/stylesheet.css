@@ -16,15 +16,25 @@ body {
     font-family: font;
 }
 
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-.box1 .box {                                          /* .box:nth-child | .box:nth-child(even) | .box:nth-child(odd) */
-    width: 150px;                                     /* .box:first-child | .box:last-child */
-    height: 50px;                                     
+h2{
+    margin-top: 20px;
+}
+
+li{
+    list-style: none;
+    width: 150px;
+    height: 50px;
     border: 2px solid white;
     border-radius: 10px;
     padding: 10px;
-    margin: 10px 0px;
 }
+
 
 .box1 .box:nth-child(3) {
     background-color: blueviolet;
@@ -32,37 +42,11 @@ body {
 
 
 
-.box2{
-    margin: 50px 0px;
-}
-
-.box2 .box {
-    width: 150px;
-    height: 50px;
-    border: 2px solid white;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px 0px;
-}
-
 .box2 .box:nth-child(even) {
     background-color: brown;
 }
 
 
-
-.box3{
-    margin: 50px 0px;
-}
-
-.box3 .box {
-    width: 150px;
-    height: 50px;
-    border: 2px solid white;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px 0px;
-}
 
 .box3 .box:nth-child(odd) {
     background-color: red;
@@ -70,38 +54,46 @@ body {
 
 
 
-.box4{
-    margin: 50px 0px;
-}
-
-.box4 .box {
-    width: 150px;
-    height: 50px;
-    border: 2px solid white;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px 0px;
-}
-
 .box4 .box:first-child {
     background-color:cadetblue;
 }
 
 
 
-.box5{
-    margin: 50px 0px;
-}
-
-.box5 .box {
-    width: 150px;
-    height: 50px;
-    border: 2px solid white;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px 0px;
-}
-
 .box5 .box:last-child {
     background-color:cadetblue;
+}
+
+
+
+.box6 .box:not(.exemplo){
+    border-width: 7px;
+    width: 170px;
+    height: 50px;
+}
+
+
+
+.box7 :is(.exemplo, h3, h4, h5){            /* especificidade 1 (vai estilizar todos os elementos mesmo tendo outra estilização depois) */
+    background-color:chocolate;
+}
+
+.box7 h5{
+    background-color: chocolate;          /* <======= */
+}
+
+
+
+.box8 :where(.exemplo, h3, h4, h5){          /* especificidade 0 (vai estlizar todos os elementos, mas se tiver outra estilização em seguida, vai considerar esta) */
+    background-color: chocolate;
+}
+
+.box8 h5{
+    background-color: blue;                /* <======= */
+}
+
+
+
+.box9 .box:has(p){                           /* vai checar em todas as div's class="box" sem tem p */
+    background-color: blueviolet;
 }
