@@ -77,7 +77,6 @@ li{
 .box7 :is(.exemplo, h3, h4, h5){            /* especificidade 1 (vai estilizar todos os elementos mesmo tendo outra estilização depois) */
     background-color:chocolate;
 }
-
 .box7 h5{
     background-color: chocolate;          /* <======= */
 }
@@ -87,7 +86,6 @@ li{
 .box8 :where(.exemplo, h3, h4, h5){          /* especificidade 0 (vai estlizar todos os elementos, mas se tiver outra estilização em seguida, vai considerar esta) */
     background-color: chocolate;
 }
-
 .box8 h5{
     background-color: blue;                /* <======= */
 }
