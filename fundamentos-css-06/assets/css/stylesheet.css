@@ -3,9 +3,61 @@
     src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: Montserrat;
     margin: 30px;
-    background-color: grey;
+}
+
+table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: 30px auto;
+}
+
+thead th{
     color: white;
+    height: 40px;
+    background-color:blueviolet;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+th, td{
+    padding: 5px;
+    font-size: 14px;
+}
+
+tbody tr{
+    height: 60px;
+}
+
+tbody tr:hover{
+    background-color: rgb(225, 225, 225);
+    cursor: pointer;
+}
+
+tfoot td{
+    border-top: 20px solid blueviolet;
+    text-align: center;
+    padding: 20px 0px;
+    font-weight: 900;
+        & a{
+            text-decoration: none;
+            color: blueviolet;
+        }
+}
+
+tbody tr:nth-child(even){
+    background-color: rgb(239, 239, 239);
+}
+
+th:nth-child(odd), td:nth-child(odd){
+    text-align: center;
+    width: 20%;
 }
