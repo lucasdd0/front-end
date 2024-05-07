@@ -7,10 +7,49 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body{
     font-family: Montserrat;
-    margin: 30px;
 }
 
+html{
+    font-size: 20px;
+}
+
+.container1 {
+    width: 100%; /* width: 100vw; => mudar para % por conta da barra de rolagem*/
+    text-align: center;
+        & .box:nth-child(2){
+            background-color: #ccc;
+            height: 50vh;
+            font-size: 5vmin;       /* quando chege em 5% começa a diminuir */
+        }
+        & .box:nth-child(3){
+            background-color: #aaa;
+            height: 50vh;
+            font-size: 5vmax;       /* quando chege em 5% começa a aumentar */
+        }
+        & .box:nth-child(4){
+            background-color: #666;
+            height: 50vh;
+        }
+}
+
+.container2{
+    width: 100%;
+    text-align: center;
+    height: 20vh;
+        & .box{
+            font-size: 20px;
+        }
+        & .box p{
+            font-size: 1em;         /* está vinculado com o font-size do pai (.box), ou seja, 1 x 20px */
+        }
+}
+
+.container3{
+    width: 100%;
+    text-align: center;
+    height: 20vh;
+        & .box p{
+            font-size: 2rem;        /* está vinculado com o font-size do html, ou seja, 2 x 20px */
+        }
+}
