@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+:root{
+    --color-light: #f4f4f4;
+    --color-dark: #333333;
+    --color-pink: #dc143c;
+    --transiiton: .5s;
+    --space-10: 1rem;
+    --space-20: 2rem;
+    --space-40: 4rem;
+    --radius: 0.7rem;
+}
+
+html{
+    font-size: 62.5%;      /* 1 rem são 16px => se dividir 10px por 16px = 0,625 * 100 => 62,5% (10px) */
+}
+
+body{
+    font-size: 1.6rem;
+    background-color: var(--color-light);
+}
+
+.container{
+    width: 80%;
+    min-height: 30vh;
+    margin: var(--space-40) auto;
+    padding: var(--space-40);
+    background-color: var(--color-dark);
+    text-align: center;
+    border-radius: var(--radius);
+}
+
+.container-title{
+    font-size: 6vmin;
+    color: var(--color-light);
+    margin-bottom: var(--space-20);
+}
+
+.icon{
+    font-size: 7vmin;
+    color: var(--color-light);
+    margin: var(--space-10);
+    padding: var(--space-20);
+    border: 1px solid var(--color-light);
+    border-radius: var(--radius);
+    transition: var(--transiiton);
+}
+.icon:hover{
+    border-color: var(--color-pink);
+    background-color: var(--color-pink);
+}
