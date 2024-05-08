@@ -44,7 +44,12 @@
 
 .textos{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    margin: 20px;
+}
+
+.texto{
+    padding: 20px;
 }
 
