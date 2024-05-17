@@ -7,7 +7,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
     font-family: Montserrat;
+    h1,h2{
+        color: white;
+    }
 }
 
 .container-float{
@@ -30,9 +34,9 @@
 
 .container-flex{
     width: 80%;
-    min-height: 600px;
+    height: auto;
     margin: 30px auto;
-    border: 1px solid #ccc;
+    border: 2px solid rgb(38, 65, 66);
     background-color: cadetblue;
     h1{
         text-align: center;
@@ -42,6 +46,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content:center;
+
         .box-flex{
             width: 200px;
             height: 200px;
@@ -51,6 +56,83 @@
         }
         .box-flex:hover{
             transform: scale(1.1);
+        }
+    }
+}
+
+.container-align{
+    width: 80%;
+    min-height: 80vh;
+    margin: 30px auto;
+    border: 2px solid rgb(38, 65, 66);
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    .boxes-align{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        .box-align{
+            width: 200px;
+            height: 200px;
+            background-color: #ccc;
+            margin: 20px;
+        }
+    }
+}
+
+.container-grow{
+    width: 80%;
+    min-height: 80vh;
+    margin: 30px auto;
+    border: 2px solid rgb(38, 65, 66);
+    background-color: cadetblue;
+    h1{
+        text-align: center;
+    }
+    .boxes-grow:nth-child(2){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .box{
+            width: 200px;
+            height: 250px;
+            background-color: #ccc;
+            margin: 20px;
+            padding: 10px;
+        }
+        .box-1{
+            flex-grow: 1;           /* flex-basis: 173,734px; */
+        }
+        .box-2{
+            flex-grow: 2;           /* flex-basis: 347,453px; */
+        }
+        .box-3{
+            flex-grow: 0;           /* flex-basis: 200px; */
+        }
+    }
+    .boxes-grow:nth-child(3){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .box{
+            width: 200px;
+            height: 250px;
+            background-color: #ccc;
+            margin: 20px;
+            padding: 10px;
+        }
+        .box-1{
+            order: 2;
+        }
+        .box-2{
+            order: 3;
+        }
+        .box-3{
+            order: 1;
         }
     }
 }
