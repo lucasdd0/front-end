@@ -9,8 +9,9 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: Montserrat;
-    h1,h2{
+    h1{
         color: white;
+        text-align: center;
     }
 }
 
@@ -104,25 +105,27 @@
             margin: 20px;
             padding: 10px;
         }
-        .box-1{
-            flex-grow: 1;           /* flex-basis: 173,734px; */
+        .box-1{                     /* flex-grow => baseado no espaço disponível */
+            flex-grow: 0;           /* flex-basis: 173,734px; */
         }
         .box-2{
-            flex-grow: 2;           /* flex-basis: 347,453px; */
+            flex-grow: 1;           /* flex-basis: 200px; */
         }
         .box-3{
-            flex-grow: 0;           /* flex-basis: 200px; */
+            flex-grow: 2;           /* flex-basis: 347,453px; */
         }
     }
     .boxes-grow:nth-child(3){
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin: 20px;
+        row-gap: 20px;
+        column-gap: 20px;
         .box{
             width: 200px;
             height: 250px;
             background-color: #ccc;
-            margin: 20px;
             padding: 10px;
         }
         .box-1{
@@ -134,5 +137,21 @@
         .box-3{
             order: 1;
         }
+    }
+}
+
+.container-position{
+    margin: 150px auto;
+    width: 80%;
+    min-height: 600px;
+    background-color: cadetblue;
+    position: relative;                 /* relative (padrão do css): se posiciona de acordo com a div que ele está*/
+    .box-position{
+        width: 250px;
+        height: 250px;
+        background-color: #ccc;
+        position: absolute;             /* absolute: se posiciona de acordo com a página */
+        top: 0;
+        left: 0;
     }
 }
