@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+:root{
+    --color: rgb(64, 102, 113);
+}
+
+html{
+    font-size: 62.5%;           /* 62.5% = 10px */
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    transition: .5s;
+}
+
+img{
+    max-width: 100%;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url(../images/pexels-asadphoto-2549018.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    .hero-content{
+        width: 60%;
+        padding: 5rem;
+        color: white;
+        h2{
+            font-size: 7vmin;
+        }
+        p{
+            font-weight: 600;
+            margin-bottom: 2rem;
+            line-height: 3.6rem;
+        }
+        a{
+            color: white;
+        }
+    }
+}
+
+.btn{
+    background-color: var(--color);
+    border: 2px solid var(--color);
+    padding: 8px 3.5rem;
+    border-radius: 5px;
+    color: white;
+    transition: .5s;
+    &:hover{
+        background-color: transparent;
+        color: var(--color);
+    }
+}
+
+.hotel-tittle{
+    font-size: 5vmin;
+    text-align: center;
+    margin: 4rem 0 2rem;
+    color: var(--color);
+}
+
+.hotel-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    .hotel-item{
+        width: 28%;
+        margin: 3rem 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        box-shadow: 1px 1px 30px #ccc;
+        border-radius: 5px;
+        transition: .5s;
+        &:hover{
+            transform: scale(1.1);
+        }
+        img{
+            width: 90%;
+            border-radius: 5px;
+        }
+        h3{
+            margin: 2rem 0;
+            font-weight: 800;
+        }
+        p{
+            margin: 0 0 3rem;
+            width: 80%;
+        }
+    }
+}
