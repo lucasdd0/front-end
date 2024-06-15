@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Montserrat';
+}
+
+:root{
+    --border: 0.3rem solid white;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 600;
+    background-color:silver;
+}
+
+h1{
+    font-size: 3.2rem;
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
+.container{
+    height: 90vh;
+    padding: 3rem;
+    gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @media (max-width: 768px){
+        height: 180vh;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .estrutura-divs{
+        background-color: rgba(0, 0, 255, 0.601);
+        border: var(--border);
+        border-radius: 1rem;
+        display: grid;
+        grid-template-rows: 15% 5% 70% 10%;
+        transition: .5s;
+        &:hover{
+            transform: scale(1.02);
+        }
+        .header{
+            border-radius: 1rem 1rem 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: var(--border);
+            background-color: rgb(0, 0, 172);
+        }
+        .main{
+            margin: 2rem;
+        }
+        .cards{
+            border-radius: 1rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: "section1 section2" "article1 article2";
+            margin: 2rem;
+            gap: 2rem;
+            .content{
+                background-color: blue;
+                border: var(--border);
+                border-radius: 1rem;
+                padding: 2rem;
+            }
+            .section1{
+                grid-area: section1;
+            }
+            .section2{
+                grid-area: section2;
+            }
+            .article1{
+                grid-area: article1;
+            }
+            .article2{
+                grid-area: article2;
+            }
+        }
+
+        .footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: var(--border);
+            background-color: #333;
+            border-radius: 0 0 1rem 1rem;
+        }
+    }
+
+    .estrutura-semantica{
+        background-color: rgba(255, 0, 0, 0.601);
+        border: var(--border);
+        border-radius: 1rem;
+        display: grid;
+        grid-template-rows: 15% 5% 70% 10%;
+        transition: .5s;
+        &:hover{
+            transform: scale(1.02);
+        }
+        header{
+            background-color: red;
+            border-radius: 1rem 1rem 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: var(--border);
+        }
+        main{
+            margin: 2rem;
+        }
+        .main-content{
+            border-radius: 1rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: "section1 section2" "article1 article2";
+            margin: 2rem;
+            gap: 2rem;
+            .content{
+                background-color: red;
+                border: var(--border);
+                border-radius: 1rem;
+                padding: 2rem;
+            }
+            .section1{
+                grid-area: section1;
+            }
+            .section2{
+                grid-area: section2;
+            }
+            .article1{
+                grid-area: article1;
+            }
+            .article2{
+                grid-area: article2;
+            }
+        }
+
+        footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: var(--border);
+            background-color: #333;
+            border-radius: 0 0 1rem 1rem;
+        }
+    }
+}

@@ -1,11 +1,10 @@
 .header{
     background-color: #f1f1f1;
-    width: 100%;
     padding: 2rem;
     display: grid;
-    position: fixed;
+    position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 1;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "logo nav";
     .logo{
