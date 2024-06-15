@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Montserrat';
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+h1{
+    font-size: 3.2rem;
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
+a{
+    text-decoration: dashed;
+    color: #999;
+    font-weight: 900;
+    &:hover{
+        color: #fff;
+    }
+}
+
+ul{
+    list-style: none;
+}
+
+.btn{
+    border: 1px solid #333;
+    padding: 0.2rem 1.5rem;
+    color: #333;
+    &:hover{
+        background-color: #333;
+        color: #fff;
+    }
+}
+
+header, footer{
+    height: 10rem;
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ul{
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+main{
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+article{
+    margin: 2rem auto;
+    min-height: 70vh;
+    border: 1px solid #666;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    h1{
+        margin-bottom: 2rem 0;
+    }
+    p{
+        margin-bottom: 3rem;
+    }
+}
+
+section{
+    margin: 2rem ;
+    min-height: 30vh;
+    border: 0.1rem solid #666;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+    div, aside{
+        width: 40rem;
+        height: 30rem;
+        padding: 4rem 2rem;
+        background-color: #ccc;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 3rem;
+        li{
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+footer{
+    justify-content: center;
+}
