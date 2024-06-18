@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <form id="dados" name="dados" method="post" action="/aplicação">
+        <h1>Formulário</h1>
+        <fieldset>
+            <label for="usuario">Usuário</label>
+            <input type="text" id="usuario" name="usuario" required
+            placeholder="Ex: user123" minlength="5" maxlength="15" autofocus>         <!--readonly-->
+        </fieldset>
+
+        <fieldset>
+            <input type="submit" value="Enviar Dados">                                <!--disable-->
+        </fieldset>
+    </form>
+</body>
+</html>

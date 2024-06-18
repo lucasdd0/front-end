@@ -26,10 +26,3 @@ fieldset{
     margin: 2rem;
     padding: 2rem;
 }
-
-textarea{
-    width: 80%;
-    height: 20rem;
-    padding: 2rem;
-    resize: none;
-}

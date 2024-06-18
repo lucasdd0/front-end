@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+h1{
+    color: red;
+    height: 5rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2{
+    color: red;
+    height: 5rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+form{
+    width: 90%;
+    max-width: 50rem;
+    height: auto;
+    margin: 3rem auto;
+    border: 0.2rem solid black;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset{
+    border: none;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+legend{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+input{
+    background-color: rgb(233, 233, 233);
+    width: 100%;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#btn{
+    background-color: red;
+    color: white;
+    padding: 1.5rem;
+    font-size: 2rem;
+    font-weight: 800;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 2.5rem;
+    }
+    form {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 2rem;
+    }
+    form {
+        padding: 0.5rem;
+    }
+}

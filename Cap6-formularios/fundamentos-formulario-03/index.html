@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <form id="dados" name="dados" method="post" action="/aplicação">
+        <h1>Meu Projeto Web</h1>
+        <h2>Crie sua conta</h2>
+        <fieldset>
+            <legend>Nome</legend>
+            <label for="nome"></label>
+            <input type="text" id="nome" name="nome"
+            placeholder="Ex: ______de______" minlength="10" maxlength="50" autofocus required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Email</legend>
+            <label for="email"></label>
+            <input type="email" name="email" id="email"
+            placeholder="Ex: seuemail@email.com" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Usuário</legend>
+            <label for="user"></label>
+            <input type="text" name="user" id="user"
+            placeholder="Ex: user12345" minlength="5" maxlength="15" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Senha</legend>
+            <label for="senha"></label>
+            <input type="password" name="senha" id="senha"
+            placeholder="Ex: 12345" minlength="5" maxlength="15" required>
+        </fieldset>
+
+        <fieldset>
+            <input type="submit" id="btn" value="Criar conta">
+        </fieldset>
+    </form>
+</body>
+</html>
