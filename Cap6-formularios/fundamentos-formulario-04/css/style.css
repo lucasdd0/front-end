@@ -7,8 +7,7 @@
 
 :root {
     --color-blue: rgb(20, 20, 100);
-    --color-gray: #f2f2f2;
-    --color-light-gray: #e0e0e0;
+    --color-light-gray: #f2f2f2;
     --margin-base: 1rem;
 }
 
@@ -18,7 +17,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    background-color: var(--color-gray);
+    background-color: var(--color-light-gray);
     color: var(--color-blue);
     display: flex;
     justify-content: center;
@@ -64,6 +63,10 @@ body {
     background-color: white;
     border-radius: 1rem;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.601);
+    transition: .5s;
+    &:hover{
+        transform: scale(1.02);
+    }
 }
 
 .box-60 {
@@ -77,6 +80,10 @@ body {
     background-color: white;
     border-radius: 1rem;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.601);
+    transition: .5s;
+    &:hover{
+        transform: scale(1.02);
+    }
 }
 
 .form {
@@ -110,6 +117,7 @@ select {
     font-size: 1.8rem;
     border: 1px solid #20046e;
     border-radius: 10px;
+    background-color: #f2f2f251;
 }
 
 input:focus,
@@ -166,6 +174,15 @@ select {
         font-size: 1.8rem;
         border: 0;
         cursor: pointer;
+        &:hover .arrow{
+            animation: arrow 1.5s ease-in-out infinite;
+        }
+    }
+}
+
+@keyframes arrow {
+    50% {
+        transform: translateX(5px);
     }
 }
 
