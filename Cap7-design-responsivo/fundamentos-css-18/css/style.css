@@ -40,7 +40,7 @@ a {
 header {
     width: 100%;
     background-color: white;
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
     position: sticky;
     display: flex;
     justify-content: space-between;
@@ -56,7 +56,7 @@ header {
         gap: 2rem;
 
         a:hover {
-            border-bottom: 3px solid var(--color);
+            border-bottom: 0.3rem solid var(--color);
         }
     }
 }
@@ -118,9 +118,11 @@ main {
     }
 
     hr {
+        background-color: white;
         width: 20rem;
-        height: 2px;
+        height: 0.2rem;
         margin-bottom: 6rem;
+        border: none;
     }
 
     .item {
@@ -160,7 +162,7 @@ main {
 
     form {
         input {
-            padding: 15px;
+            padding: 1.5rem;
             border: 2px solid var(--color);
             border-radius: 4px;
             margin-right: 1.5rem;
@@ -179,7 +181,7 @@ main {
 
             &:hover {
                 background-color: transparent;
-                border: 2px solid var(--color);
+                border: 0.2rem solid var(--color);
                 color: var(--color);
             }
         }
@@ -215,14 +217,31 @@ footer {
 }
 
 @media (max-width: 700px) {
-    html{
+    html {
         font-size: 55%;
     }
+
     header {
         flex-direction: column;
     }
 }
 
-@media (max-width: 320px) {
-    
+@media (max-width: 470px) {
+    html{
+        font-size: 45%;
+    }
+    .cadastro {
+        form {
+            display: flex;
+            flex-direction: column;
+
+            input {
+                margin-right: 0;
+            }
+
+            button {
+                margin: 1.5rem auto;
+            }
+        }
+    }
 }
