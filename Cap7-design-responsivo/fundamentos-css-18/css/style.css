@@ -82,7 +82,7 @@ main {
         gap: 2rem;
 
         h2 {
-            font-size: 3rem;
+            font-size: 4rem;
         }
 
         h3 {
@@ -92,7 +92,7 @@ main {
         .btn {
             background-color: var(--color);
             color: white;
-            padding: 1.5rem 2.5rem;
+            padding: 2rem 2.5rem;
             border-radius: 1rem;
 
             &:hover {
@@ -243,5 +243,11 @@ footer {
                 margin: 1.5rem auto;
             }
         }
+    }
+}
+
+@media (max-width: 320px) {
+    html{
+        font-size: 40%;
     }
 }
