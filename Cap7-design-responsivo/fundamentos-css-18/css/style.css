@@ -209,6 +209,10 @@ footer {
 }
 
 @media(max-width: 850px) {
+    html {
+        font-size: 60%;
+    }
+
     .informacoes {
         .item {
             flex-direction: column;
@@ -246,8 +250,24 @@ footer {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 330px) {
     html{
         font-size: 40%;
+    }
+    main{
+        min-height: 90vh;
+        article{
+            h2{
+                font-size: 3.5rem;
+            }
+        }
+    }
+    .cadastro{
+        form{
+            input, button{
+                padding: 1rem;
+                font-size: 1.8rem;
+            }
+        }
     }
 }
