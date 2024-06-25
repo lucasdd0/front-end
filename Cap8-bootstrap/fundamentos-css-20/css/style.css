@@ -1,0 +1,50 @@
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bs-secondary-bg);
+    ul,li{
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+main{
+    min-height: 100vh;
+    background-color:burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+section{
+    min-height: 40vh;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    ul{
+        display: flex;
+    }
+}
+
+footer{
+    background-color: gray;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

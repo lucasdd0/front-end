@@ -1,0 +1,21 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: var(--bs-blue);
+    background-color: var(--bs-gray-300);
+}
+
+h1{
+    color: var(--bs-secondary);
+}
+
+a{
+    background-color: var(--bs-dark-text-emphasis);
+    color: var(--bs-light);
+    text-decoration: none;
+    margin: 1rem auto;
+    padding: 1rem;
+}
