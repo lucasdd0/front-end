@@ -1,59 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
 
+    <link rel="stylesheet" href="./css/bootstrap.css">
+
     <link rel="stylesheet" href="./css/style.css">
 
-    <link rel="stylesheet" href="./css/bootstrap.css">
 </head>
 <body>
+    <h1 class="text-center">Bootstrap</h1>
+
+    <div class="container border">
+        <h2>Paleta de cores</h2>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-primary">
+                <h3>Primary</h3>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-secondary">
+                <h3>Secondary</h3>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-success">
+                <h3>Success</h3>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-danger">
+                <h3>Danger</h3>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-warning">
+                <h3>Warning</h3>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-info">
+                <h3>Info</h3>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-light">
+                <h3>Light</h3>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-dark">
+                <h3>Dark</h3>
+            </div>
+        </div>
+    </div>
+
     <div class="container-fluid">
-        <header>
-            <h1>Meu projeto Web</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                </ul>
-            </nav>
-        </header>
-    
-        <main>
-            <article>
-                <h2>Venha conhecer meu projeto</h2>
-                <h3>Lorem ipsum dolor sit</h3>
-                <a href="#">Mais informações</a>
-            </article>
-        </main>
-    
-        <section>
-            <ul>
-                <li>
-                    <h3>Lorem ipsum dolor</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, error.</p>
-                    <a href="#">Saber mais</a>
-                </li>
-                <li>
-                    <h3>Lorem ipsum dolor</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, error.</p>
-                    <a href="#">Saber mais</a>
-                </li>
-                <li>
-                    <h3>Lorem ipsum dolor</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, error.</p>
-                    <a href="#">Saber mais</a>
-                </li>
-            </ul>
-        </section>
-    
-        <footer>
-            <p>Todos os direitos reservados</p>
-        </footer>
+        <h2>Container Fluid</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio obcaecati numquam sed officiis quo perspiciatis rerum repellat omnis, officia eveniet deserunt corrupti exercitationem nihil eos odit totam neque facere. Sed reiciendis cumque maxime ducimus deleniti temporibus voluptates eveniet eos facere consequatur dignissimos expedita aliquid repudiandae quo provident necessitatibus repellendus rem distinctio, quaerat non ad reprehenderit adipisci! Illum nulla laborum voluptas?</p>
+        <a href="">Mais Informações</a>
+    </div>
+
+    <div class="container border">
+        <h2>Grid</h2>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 border">
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, error.</p>
+                <a href="#">Saber mais</a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 border bg-danger">
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, error.</p>
+                <a href="#">Saber mais</a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 border">
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, error.</p>
+                <a href="#">Saber mais</a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 border bg-danger">
+                <h3>Lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, error.</p>
+                <a href="#">Saber mais</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container bg-danger">
+        <h2 class="display-5 text-center">Tipografia</h2>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptate porro cumque repellat facere provident expedita ea quisquam impedit pariatur, minus ab quibusdam, officia ullam id fugit saepe, culpa excepturi corporis dolorum ducimus eos? Unde temporibus harum libero vel consequatur adipisci a dolore totam minima, sapiente hic error, itaque fugit.</p>
+        <p class="my-font text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ab quos voluptatibus alias eveniet, obcaecati tempora reiciendis. Labore assumenda magnam, impedit consequatur tenetur sequi fugiat eligendi sapiente, dolore nobis aut!</p>
+        <a href="" class="lead">Mais Informações</a>
     </div>
 
     <script src="./js/bootstrap.js"></script>

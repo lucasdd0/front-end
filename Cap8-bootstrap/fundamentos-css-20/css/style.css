@@ -1,4 +1,13 @@
-li{
+@font-face {
+    font-family: 'Catamaran', sans-serif;
+    src: url(../fonts/Catamaran/Catamaran-VariableFont_wght.ttf);
+}
+
+.my-font{
+    font-family: 'Catamaran', sans-serif;
+}
+
+ul{
     list-style: none;
 }
 
@@ -6,45 +15,43 @@ a{
     text-decoration: none;
 }
 
-header{
-    width: 100%;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.container{
     background-color: var(--bs-secondary-bg);
-    ul,li{
-        display: flex;
-        gap: 1rem;
-    }
+    margin: 2rem auto;
 }
 
-main{
-    min-height: 100vh;
-    background-color:burlywood;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.container-fluid{
+    background-color: var(--bs-tertiary-bg);
 }
 
-section{
-    min-height: 40vh;
-    padding: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    ul{
-        display: flex;
-    }
+.bg-primary{
+    border: 3px solid var(--bs-primary-border-subtle);
 }
 
-footer{
-    background-color: gray;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.bg-secondary{
+    border: 3px solid var(--bs-secondary-border-subtle);
+}
+
+.bg-success{
+    border: 3px solid var(--bs-success-border-subtle);
+}
+
+.bg-danger{
+    border: 3px solid var(--bs-danger-border-subtle);
+}
+
+.bg-warning{
+    border: 3px solid var(--bs-warning-border-subtle);
+}
+
+.bg-info{
+    border: 3px solid var(--bs-info-border-subtle);
+}
+
+.bg-light{
+    border: 3px solid var(--bs-light-border-subtle);
+}
+
+.bg-dark{
+    border: solid 3px var(--bs-dark-border-subtle);
 }
