@@ -3,8 +3,12 @@
     src: url(../fonts/Catamaran/Catamaran-VariableFont_wght.ttf);
 }
 
-.my-font{
-    font-family: 'Catamaran', sans-serif;
+body{
+    background: linear-gradient(45deg, var(--bs-danger), transparent, transparent, transparent, transparent, var(--bs-danger));
+}
+
+h1{
+    filter: drop-shadow(0 0 10px var(--bs-danger)) drop-shadow(0 0 10px var(--bs-danger));
 }
 
 ul{
@@ -16,12 +20,23 @@ a{
 }
 
 .container{
-    background-color: var(--bs-secondary-bg);
-    margin: 2rem auto;
+    background-color: var(--bs-danger-bg-subtle);
 }
 
-.container-fluid{
-    background-color: var(--bs-tertiary-bg);
+.my-button{
+    background-color: transparent;
+    color: white;
+    padding: .6rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: .2s;
+    &:hover{
+        filter: drop-shadow(0 0 3px var(--bs-danger)) drop-shadow(0 0 3px var(--bs-danger));
+    }
+}
+
+.my-font{
+    font-family: 'Catamaran', sans-serif;
 }
 
 .bg-primary{

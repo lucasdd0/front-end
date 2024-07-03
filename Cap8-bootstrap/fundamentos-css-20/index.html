@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-bs-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,64 +11,111 @@
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
+
 <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
     <h1 class="text-center">Bootstrap</h1>
 
-    <div class="container border">
+    <div class="container border border-3 border-danger rounded p-3 my-5">
         <h2>Paleta de cores</h2>
-        <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-primary">
-                <h3>Primary</h3>
+        <div class="row g-2">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-primary rounded rounded-4 p-2">
+                <h4>Primary</h4>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-secondary">
-                <h3>Secondary</h3>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-secondary rounded rounded-4 p-2">
+                <h4>Secondary</h4>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-success">
-                <h3>Success</h3>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-success rounded rounded-4 p-2">
+                <h4>Success</h4>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-danger">
-                <h3>Danger</h3>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-danger rounded rounded-4 p-2">
+                <h4>Danger</h4>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-warning">
-                <h3>Warning</h3>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-warning rounded rounded-4 p-2">
+                <h4>Warning</h4>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-info">
-                <h3>Info</h3>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-info rounded rounded-4 p-2">
+                <h4>Info</h4>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-light">
-                <h3>Light</h3>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-light rounded rounded-4 p-2">
+                <h4>Light</h4>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-dark">
-                <h3>Dark</h3>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-dark rounded rounded-4 p-2">
+                <h4>Dark</h4>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid text-center">
         <h2>Container Fluid</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio obcaecati numquam sed officiis quo perspiciatis rerum repellat omnis, officia eveniet deserunt corrupti exercitationem nihil eos odit totam neque facere. Sed reiciendis cumque maxime ducimus deleniti temporibus voluptates eveniet eos facere consequatur dignissimos expedita aliquid repudiandae quo provident necessitatibus repellendus rem distinctio, quaerat non ad reprehenderit adipisci! Illum nulla laborum voluptas?</p>
-        <a href="">Mais Informações</a>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio obcaecati numquam sed officiis quo
+            perspiciatis rerum repellat omnis, officia eveniet deserunt corrupti exercitationem nihil eos odit totam
+            neque facere. Sed reiciendis cumque maxime ducimus deleniti temporibus voluptates eveniet eos facere
+            consequatur dignissimos expedita aliquid repudiandae quo provident necessitatibus repellendus rem
+            distinctio, quaerat non ad reprehenderit adipisci! Illum nulla laborum voluptas?</p>
+        <a href="" class="my-button">Mais Informações</a>
     </div>
 
-    <div class="container border">
+    <div class="container border border-3 border-danger rounded my-5">
         <h2>Grid</h2>
         <div class="row">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3 border">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 border border-2 border-danger">
                 <h3>Lorem ipsum dolor</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, error.</p>
                 <a href="#">Saber mais</a>
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3 border bg-danger">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 border border-2 border-danger bg-danger">
                 <h3>Lorem ipsum dolor</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, error.</p>
                 <a href="#">Saber mais</a>
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3 border">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 border border-2 border-danger">
                 <h3>Lorem ipsum dolor</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, error.</p>
                 <a href="#">Saber mais</a>
             </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3 border bg-danger">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 border border-2 border-danger bg-danger">
                 <h3>Lorem ipsum dolor</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, error.</p>
                 <a href="#">Saber mais</a>
@@ -75,13 +123,68 @@
         </div>
     </div>
 
-    <div class="container bg-danger">
-        <h2 class="display-5 text-center">Tipografia</h2>
-        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptate porro cumque repellat facere provident expedita ea quisquam impedit pariatur, minus ab quibusdam, officia ullam id fugit saepe, culpa excepturi corporis dolorum ducimus eos? Unde temporibus harum libero vel consequatur adipisci a dolore totam minima, sapiente hic error, itaque fugit.</p>
-        <p class="my-font text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ab quos voluptatibus alias eveniet, obcaecati tempora reiciendis. Labore assumenda magnam, impedit consequatur tenetur sequi fugiat eligendi sapiente, dolore nobis aut!</p>
-        <a href="" class="lead">Mais Informações</a>
+    <div class="container border border-3 border-danger rounded text-center mb-4">
+        <h2 class="display-5 border-bottom border-danger border-3">Tipografia</h2>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptate porro cumque
+            repellat facere provident expedita ea quisquam impedit pariatur, minus ab quibusdam, officia ullam id fugit
+            saepe, culpa excepturi corporis dolorum ducimus eos? Unde temporibus harum libero vel consequatur adipisci a
+            dolore totam minima, sapiente hic error, itaque fugit.</p>
+        <p class="my-font text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ab quos voluptatibus
+            alias eveniet, obcaecati tempora reiciendis. Labore assumenda magnam, impedit consequatur tenetur sequi
+            fugiat eligendi sapiente, dolore nobis aut!</p>
+        <a href="" class="lead btn btn-outline-danger text-light mb-2">Mais Informações</a>
+    </div>
+
+    <div class="container bg-transparent">
+        <figure>
+            <div class="row">
+                <img src="./images/404-page-not-found-66.svg" alt="" class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <img src="./images/data-analysis-1-39.svg" alt="" class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <img src="./images/data-settings-68.svg" alt="" class="col-12 col-sm-12 col-md-6 col-lg-4">
+            </div>
+        </figure>
+    </div>
+
+    <div class="container bg-transparent">
+        <table class="table table-striped table-bordered table-hover text-center">
+            <thead>
+                <tr>
+                    <th>Banda</th>
+                    <th>Data Show</th>
+                    <th>Local Show</th>
+                    <th>Ingresso</th>
+                </tr>
+            </thead>
+            <tbody class="table table-group-divider">
+                <tr>
+                    <th>Led Zeppelin</th>
+                    <td>04/03</td>
+                    <td>São Paulo</td>
+                    <td>1.500,00</td>
+                </tr>
+                <tr>
+                    <th>Pink Floyd</th>
+                    <td>05/06</td>
+                    <td>Rio de Janeiro</td>
+                    <td>1.500,00</td>
+                </tr>
+                <tr>
+                    <th>Rolling Stones</th>
+                    <td>07/08</td>
+                    <td>Belo Horizonte</td>
+                    <td>1.500,00</td>
+                </tr>
+                <tr>
+                    <th>The Who</th>
+                    <td>10/10</td>
+                    <td>Brasília</td>
+                    <td>1.300,00</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <script src="./js/bootstrap.js"></script>
 </body>
+
 </html>
