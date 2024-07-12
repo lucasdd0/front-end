@@ -4,11 +4,7 @@
 }
 
 body{
-    background: linear-gradient(45deg, var(--bs-danger), transparent, transparent, transparent, transparent, var(--bs-danger));
-}
-
-h1{
-    filter: drop-shadow(0 0 10px var(--bs-danger)) drop-shadow(0 0 10px var(--bs-danger));
+    background: linear-gradient(45deg, var(--bs-primary), transparent, transparent, transparent, transparent, var(--bs-primary));
 }
 
 ul{
@@ -20,7 +16,12 @@ a{
 }
 
 .container{
-    background-color: var(--bs-danger-bg-subtle);
+    background-color: var(--bs-primary-bg-subtle);
+}
+
+.my-font{
+    filter: drop-shadow(0 0 10px var(--bs-primary)) drop-shadow(0 0 10px var(--bs-primary));
+    font-weight: 700;
 }
 
 .my-button{
@@ -31,12 +32,8 @@ a{
     border-radius: 10px;
     transition: .2s;
     &:hover{
-        filter: drop-shadow(0 0 3px var(--bs-danger)) drop-shadow(0 0 3px var(--bs-danger));
+        filter: drop-shadow(0 0 3px var(--bs-primary)) drop-shadow(0 0 3px var(--bs-primary));
     }
-}
-
-.my-font{
-    font-family: 'Catamaran', sans-serif;
 }
 
 .bg-primary{
