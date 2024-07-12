@@ -24,6 +24,15 @@ a{
     font-weight: 700;
 }
 
+.my-button-menu{
+    border: none;
+    filter: drop-shadow(0 0 1px var(--bs-light)) drop-shadow(0 0 1px var(--bs-light));
+    transition: .1s;
+    &:hover{
+        filter: drop-shadow(0 0 1px var(--bs-light)) drop-shadow(0 0 1px var(--bs-light)) drop-shadow(0 0 1px var(--bs-light));
+    }
+}
+
 .my-button{
     background-color: transparent;
     color: white;
