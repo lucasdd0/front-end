@@ -47,7 +47,7 @@
                                     <li><a class="dropdown-item" href="#container-fluid">Container Fluid</a></li>
                                     <li><a class="dropdown-item" href="#grid">Grid</a></li>
                                     <li><a class="dropdown-item" href="#typography">Typography</a></li>
-                                    <li><a class="dropdown-item" href="#images">Images</a></li>
+                                    <li><a class="dropdown-item" href="#cards">Cards</a></li>
                                     <li><a class="dropdown-item" href="#form">Form</a></li>
                                 </ul>
                             </li>
@@ -64,7 +64,7 @@
 
 
 
-    <div class="container border border-3 border-primary rounded p-4 my-5" id="color-palette">
+    <div class="container border border-3 border-primary rounded p-4 my-5 my-bg" id="color-palette">
         <h2>Color Palette</h2>
         <div class="row g-2">
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-primary rounded rounded-4 p-2">
@@ -96,7 +96,8 @@
 
     <div class="container-fluid text-center" id="container-fluid">
         <h2>Container Fluid</h2>
-        <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio obcaecati numquam sed officiis quo
+        <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio obcaecati numquam sed officiis
+            quo
             perspiciatis rerum repellat omnis, officia eveniet deserunt corrupti exercitationem nihil eos odit totam
             neque facere. Sed reiciendis cumque maxime ducimus deleniti temporibus voluptates eveniet eos facere
             consequatur dignissimos expedita aliquid repudiandae quo provident necessitatibus repellendus rem
@@ -104,7 +105,7 @@
         <a href="" class="my-button">More Info</a>
     </div>
 
-    <div class="container border border-3 border-primary rounded my-5" id="grid">
+    <div class="container border border-3 border-primary rounded my-5 my-bg" id="grid">
         <h2 class="p-1">Grid</h2>
         <div class="row">
             <div class="col-12 col-sm-12 col-md-6 col-lg-3 border border-2 border-primary p-3">
@@ -130,7 +131,7 @@
         </div>
     </div>
 
-    <div class="container border border-3 border-primary rounded text-center mb-4 p-3" id="typography">
+    <div class="container border border-3 border-primary rounded text-center p-3 my-bg" id="typography">
         <h2 class="display-6 border-bottom border-primary border-3">Typography</h2>
         <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptate porro cumque
             repellat facere provident expedita ea quisquam impedit pariatur, minus ab quibusdam, officia ullam id fugit
@@ -139,20 +140,47 @@
         <p class="my-font text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ab quos voluptatibus
             alias eveniet, obcaecati tempora reiciendis. Labore assumenda magnam, impedit consequatur tenetur sequi
             fugiat eligendi sapiente, dolore nobis aut!</p>
-        <a href="" class="lead btn btn-outline-primary text-light mb-2">More Info</a>
+        <a href="" class="lead btn btn-outline-primary text-light">More Info</a>
     </div>
 
-    <div class="container bg-transparent" id="images">
-        <figure>
-            <div class="row">
-                <img src="./images/404-page-not-found-66.svg" alt="" class="col-12 col-sm-12 col-md-6 col-lg-4" width="350" height="350">
-                <img src="./images/data-analysis-1-39.svg" alt="" class="col-12 col-sm-12 col-md-6 col-lg-4" width="350" height="350">
-                <img src="./images/data-settings-68.svg" alt="" class="col-12 col-sm-12 col-md-6 col-lg-4" width="350" height="350">
+    <div class="container my-5" id="cards">
+        <div class="row g-3">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="card border border-3 border-primary my-bg">
+                    <img src="./images/image1.svg" class="card-img-top" alt="man coding">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
             </div>
-        </figure>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="card border border-3 border-primary my-bg">
+                    <img src="./images/image2.svg" class="card-img-top" alt="robot analyzing data">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                <div class="card border border-3 border-primary my-bg">
+                    <img src="./images/image3.svg" class="card-img-top" alt="man analyzing data">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="container border border-3 border-primary rounded mb-4 p-3" id="form">
+    <div class="container border border-3 border-primary rounded mb-4 p-3 my-bg" id="form">
         <h2>Form</h2>
 
         <form class="row row-gap-3 needs-validation" novalidate>
@@ -205,7 +233,7 @@
                     </div>
                 </div>
             </div>
-                
+
             <div class="col-12">
                 <label for="occupationArea" class="form-label">Occupation Area</label>
                 <select class="form-select p-3" id="occupationArea" aria-label="Área atuação" required>
