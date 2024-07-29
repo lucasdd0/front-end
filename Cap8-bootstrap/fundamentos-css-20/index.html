@@ -49,6 +49,7 @@
                                     <li><a class="dropdown-item" href="#typography">Typography</a></li>
                                     <li><a class="dropdown-item" href="#cards">Cards</a></li>
                                     <li><a class="dropdown-item" href="#form">Form</a></li>
+                                    <li><a class="dropdown-item" href="#accordion">Accordion</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -63,35 +64,47 @@
     </div>
 
 
+
+
     <div class="container border border-3 border-primary rounded p-4 my-5 my-bg" id="color-palette">
         <h2>Color Palette</h2>
         <div class="row g-2">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-primary rounded rounded-4 p-2">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-primary rounded rounded-4 p-2"
+                style="border: 3px solid var(--bs-primary-border-subtle);">
                 <h4>Primary</h4>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-secondary rounded rounded-4 p-2">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-secondary rounded rounded-4 p-2"
+                style="border: 3px solid var(--bs-secondary-border-subtle);">
                 <h4>Secondary</h4>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-success rounded rounded-4 p-2">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-success rounded rounded-4 p-2"
+                style="border: 3px solid var(--bs-success-border-subtle);">
                 <h4>Success</h4>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-danger rounded rounded-4 p-2">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-danger rounded rounded-4 p-2"
+                style="border: 3px solid var(--bs-danger-border-subtle);">
                 <h4>Danger</h4>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-warning rounded rounded-4 p-2">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-warning rounded rounded-4 p-2"
+                style="border: 3px solid var(--bs-warning-border-subtle);">
                 <h4>Warning</h4>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-info rounded rounded-4 p-2">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-info rounded rounded-4 p-2"
+                style="border: 3px solid var(--bs-info-border-subtle);">
                 <h4>Info</h4>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-light rounded rounded-4 p-2">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-light rounded rounded-4 p-2"
+                style="border: 3px solid var(--bs-light-border-subtle);">
                 <h4>Light</h4>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-dark rounded rounded-4 p-2">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-dark rounded rounded-4 p-2"
+                style="border: 3px solid var(--bs-dark-border-subtle);">
                 <h4>Dark</h4>
             </div>
         </div>
     </div>
+
+
 
 
     <div class="container-fluid text-center" id="container-fluid">
@@ -104,6 +117,8 @@
             distinctio, quaerat non ad reprehenderit adipisci! Illum nulla laborum voluptas?</p>
         <a href="" class="my-button">More Info</a>
     </div>
+
+
 
 
     <div class="container border border-3 border-primary rounded my-5 my-bg" id="grid">
@@ -133,6 +148,8 @@
     </div>
 
 
+
+
     <div class="container border border-3 border-primary rounded text-center p-3 my-bg" id="typography">
         <h2 class="display-6 border-bottom border-primary border-3">Typography</h2>
         <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptate porro cumque
@@ -146,9 +163,11 @@
     </div>
 
 
-    <div class="container my-5" id="cards">
 
-        <div class="row g-3">
+
+    <div class="container my-5" id="cards">
+        <h2 class="border border-3 border-primary rounded p-3 my-bg"">Cards</h2>
+        <div class=" row g-3">
             <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                 <div class="card border border-3 border-primary my-bg">
                     <img src="./images/image1.svg" class="card-img-top" alt="man coding">
@@ -156,60 +175,60 @@
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
-                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">Go
-                                somewhere</a>
-                            </div>
-                            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-lg modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">Go
+                            somewhere</a>
+                    </div>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <h2 class="fs-5">Popover in a modal</h2>
-                                        <p>This <button class="btn btn-secondary" data-bs-toggle="popover"
+                                </div>
+                                <div class="modal-body">
+                                    <h2 class="fs-5">Popover in a modal</h2>
+                                    <p>This <button class="btn btn-secondary" data-bs-toggle="popover"
                                             title="Popover title"
                                             data-bs-content="Popover body content is set in this attribute.">button</button>
-                                            triggers a popover on click.</p>
-                                            <hr>
-                                            <h2 class="fs-5">Tooltips in a modal</h2>
-                                            <p><a href="#" data-bs-toggle="tooltip" title="Tooltip">This link</a> and <a
-                                                href="#" data-bs-toggle="tooltip" title="Tooltip">that link</a> have
-                                                tooltips on hover.</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                        triggers a popover on click.</p>
+                                    <hr>
+                                    <h2 class="fs-5">Tooltips in a modal</h2>
+                                    <p><a href="#" data-bs-toggle="tooltip" title="Tooltip">This link</a> and <a
+                                            href="#" data-bs-toggle="tooltip" title="Tooltip">that link</a> have
+                                        tooltips on hover.</p>
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                 <div class="card border border-3 border-primary my-bg">
                     <img src="./images/image2.svg" class="card-img-top" alt="robot analyzing data">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
-                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Go
-                                somewhere</a>
-                            </div>
-                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Go
+                            somewhere</a>
+                    </div>
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-md-4 bg-primary">.col-md-4</div>
-                                                <div class="col-md-4 ms-auto bg-primary">.col-md-4 .ms-auto</div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-4 bg-primary">.col-md-4</div>
+                                            <div class="col-md-4 ms-auto bg-primary">.col-md-4 .ms-auto</div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-3 ms-auto bg-primary">.col-md-3 .ms-auto</div>
@@ -246,34 +265,34 @@
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
-                            <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">Go
-                                somewhere</a>
-                            </div>
-                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-lg modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">Go
+                            somewhere</a>
+                    </div>
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
-                                    </div>
+                                </div>
+                                <div class="modal-body">
                                     <div class="modal-body">
-                                        <div class="modal-body">
-                                            <form>
-                                                <div class="mb-3">
-                                                    <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                                    <input type="text" class="form-control" id="recipient-name">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="message-text" class="col-form-label">Message:</label>
-                                                    <textarea class="form-control" id="message-text"></textarea>
-                                                </div>
-                                            </form>
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Message:</label>
+                                                <textarea class="form-control" id="message-text"></textarea>
+                                            </div>
+                                        </form>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
+                                            data-bs-dismiss="modal">Close</button>
                                         <button type="button" class="btn btn-primary">Send message</button>
                                     </div>
                                 </div>
@@ -282,105 +301,165 @@
                     </div>
                 </div>
             </div>
-        </div>
+    </div>
     </div>
 
 
-    <div class="container border border-3 border-primary rounded mb-4 p-3 my-bg" id="form">
-    <h2>Form</h2>
-    
-    <form class="row row-gap-3 needs-validation" novalidate>
-                <div class="col-md-6">
+
+
+    <div class="container border border-3 border-primary rounded my-5 p-3 my-bg" id="form">
+        <h2>Form</h2>
+
+        <form class="row row-gap-3 needs-validation" novalidate>
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com" required>
+                    <label for="floatingEmail">Email address</label>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please choose a email
+                    </div>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                    <label for="floatingPassword">Password</label>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please choose a password.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingFirstName" placeholder="First Name" required>
+                    <label for="floatingFirstName">First Name</label>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingLastName" placeholder="Last Name" required>
+                    <label for="floatingLastName">Last Name</label>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="input-group">
+                    <span class="input-group-text">@</span>
                     <div class="form-floating">
-                        <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com"
-                            required>
-                        <label for="floatingEmail">Email address</label>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
-                        <div class="invalid-feedback">
-                            Please choose a email
-                        </div>
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <input type="text" class="form-control" id="floatingUserName" placeholder="Username" required>
+                        <label for="floatingUserName">Username</label>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-md-6">
-                    <div class="form-floating">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password"
-                            required>
-                        <label for="floatingPassword">Password</label>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
-                        <div class="invalid-feedback">
-                            Please choose a password.
-                        </div>
+            <div class="col-12">
+                <label for="occupationArea" class="form-label">Occupation Area</label>
+                <select class="form-select p-3" id="occupationArea" aria-label="Área atuação" required>
+                    <option selected disabled value="">Choose an option</option>
+                    <option value="0">Back-end</option>
+                    <option value="1">Front-end</option>
+                    <option value="2">Banco de Dados</option>
+                </select>
+            </div>
+
+            <div class="col-12">
+                <label for="levelExperiencia" class="form-label">Level of Experience</label>
+                <input type="range" class="form-range" min="0" max="4" id="levelExperiencia">
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                        You must agree before submitting.
                     </div>
                 </div>
+            </div>
 
-                <div class="col-md-4">
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="floatingFirstName" placeholder="First Name"
-                            required>
-                        <label for="floatingFirstName">First Name</label>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <div class="container my-bg p-3 border border-3 rounded border-primary" id="accordion">
+        <h2>Accordion</h2>
+        <div class="accordion border border-3 border-primary rounded" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="form-floating">
-                        <input type="text" class="form-control" id="floatingLastName" placeholder="Last Name" required>
-                        <label for="floatingLastName">Last Name</label>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
                     </div>
                 </div>
-
-                <div class="col-md-4">
-                    <div class="input-group">
-                        <span class="input-group-text">@</span>
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="floatingUserName" placeholder="Username"
-                                required>
-                            <label for="floatingUserName">Username</label>
-                        </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
                     </div>
                 </div>
-
-                <div class="col-12">
-                    <label for="occupationArea" class="form-label">Occupation Area</label>
-                    <select class="form-select p-3" id="occupationArea" aria-label="Área atuação" required>
-                        <option selected disabled value="">Choose an option</option>
-                        <option value="0">Back-end</option>
-                        <option value="1">Front-end</option>
-                        <option value="2">Banco de Dados</option>
-                    </select>
-                </div>
-
-                <div class="col-12">
-                    <label for="levelExperiencia" class="form-label">Level of Experience</label>
-                    <input type="range" class="form-range" min="0" max="4" id="levelExperiencia">
-                </div>
-
-                <div class="col-12">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                        <label class="form-check-label" for="invalidCheck">
-                            Agree to terms and conditions
-                        </label>
-                        <div class="invalid-feedback">
-                            You must agree before submitting.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-            </form>
+            </div>
         </div>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-        <script src="./js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

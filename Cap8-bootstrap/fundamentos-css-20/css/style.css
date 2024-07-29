@@ -44,35 +44,3 @@ a{
         filter: drop-shadow(0 0 3px var(--bs-primary)) drop-shadow(0 0 3px var(--bs-primary));
     }
 }
-
-.bg-primary{
-    border: 3px solid var(--bs-primary-border-subtle);
-}
-
-.bg-secondary{
-    border: 3px solid var(--bs-secondary-border-subtle);
-}
-
-.bg-success{
-    border: 3px solid var(--bs-success-border-subtle);
-}
-
-.bg-danger{
-    border: 3px solid var(--bs-danger-border-subtle);
-}
-
-.bg-warning{
-    border: 3px solid var(--bs-warning-border-subtle);
-}
-
-.bg-info{
-    border: 3px solid var(--bs-info-border-subtle);
-}
-
-.bg-light{
-    border: 3px solid var(--bs-light-border-subtle);
-}
-
-.bg-dark{
-    border: solid 3px var(--bs-dark-border-subtle);
-}
