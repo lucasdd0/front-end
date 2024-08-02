@@ -5,7 +5,7 @@ console.log('Olá, eu sou o console');
 // Criando variáveis
 let nome = 'Clark Kent';
 let email = 'clark@fiap.com.br';
-let idade = 35;
+let idade = 37;
 let logado = true;
 
 //Exibindo no console
@@ -42,3 +42,11 @@ let valorInicial = true;
 valorInicial = String(valorInicial);
 console.log(typeof(valorInicial), valorInicial);
 
+valorInicial = Boolean(valorInicial);
+console.log(typeof(valorInicial), valorInicial);
+
+let numero = '12345';
+console.log(typeof(numero), numero);
+
+numero = Number(numero);
+console.log(typeof numero, numero);
