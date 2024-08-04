@@ -205,7 +205,7 @@ console.log(`Math.cbrt (216) = ${Math.cbrt(216)}`);     //Cube root
 
 //Objeto Math
 console.log(`
-Sortreando um número -----------------------
+Sorteando um número -----------------------
 
 `
 );
